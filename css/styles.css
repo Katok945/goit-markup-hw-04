@@ -108,7 +108,8 @@ body {
 
 .auth-nav {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -221,15 +222,21 @@ body {
     margin-right: var(--typical-mrg);
 }
 
+.benefits-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
 .icon-antenna, 
 .icon-clock,
 .icon-diagram,
 .icon-astronaut {
     display: block;
     padding: 25px 100px;
-    background-color: #F5F4FA;
-    width: 270px;
-    height: 120px;
     margin-bottom: var(--typical-mrg);
     border-radius: 4px;
 }
@@ -317,12 +324,13 @@ body {
 .team-soc-list {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--typical-mrg);
 }
 
 .team-soc-item {
     width: 44px;
     height: 44px;
-    margin-bottom: var(--typical-mrg);
+    margin-right: 10px;
     background-color: var(--main-background-color);
     border-radius: 50%;
     display: flex;
@@ -353,7 +361,6 @@ body {
 
 .clients-item {
     display: block;
-    padding: 16px 32px;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
