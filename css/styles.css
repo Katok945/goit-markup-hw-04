@@ -228,17 +228,10 @@ body {
     align-items: center;
     width: 270px;
     height: 120px;
-    background-color: #F5F4FA;
-}
-
-.icon-antenna, 
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
-    display: block;
-    padding: 25px 100px;
     margin-bottom: var(--typical-mrg);
     border-radius: 4px;
+    background-color: #F5F4FA;
+
 }
 
 .benefits-top-text {
@@ -327,6 +320,15 @@ body {
     margin-bottom: var(--typical-mrg);
 }
 
+.team-soc-icon {
+    fill: #AFB1B8;
+}
+
+.team-soc-icon:hover,
+.team-soc-icon:focus {
+    fill: #FFFFFF;
+}
+
 .team-soc-item {
     width: 44px;
     height: 44px;
@@ -360,7 +362,9 @@ body {
 }
 
 .clients-item {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -376,16 +380,28 @@ body {
     border: 1px solid #2196F3;
 }
 
+.icon-clients {
+    fill: #AFB1B8;
+}
+
 .icon-clients:hover,
 .icon-clients:focus {
-    color: #2196F3;
+    fill: #2196F3;
 }
 
 .footer {
     background-color: var(--second-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    display: flex;
+    align-items: baseline;
 }
+
+/* .footer-container {
+    display: flex;
+    align-items: baseline;
+} */
 
 .footer-logo {
     display: block;
@@ -445,18 +461,13 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-text-color);
-}
+    margin-bottom: 20px;
 
-.footer-soc-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-soc-item {
     width: 44px;
     height: 44px;
-    margin-bottom: var(--typical-mrg);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -471,7 +482,15 @@ body {
 .footer-soc-item:hover,
 .footer-soc-item:focus {
     background-color: var(--third-background-color);
+}
+
+.footer-soc-icon {
     fill: #FFFFFF;
+}
+
+
+.footer-soc-list {
+    display: flex;
 }
 
 /*-------------PORTFOLIO-----------*/
@@ -503,6 +522,19 @@ body {
 .gallery-button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.examples-link {
+    display: block;
+}
+
+.examples-link:hover,
+.examples-link:focus {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-list {
@@ -518,7 +550,7 @@ body {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
- }
+}
 
 .examples-title {
     flex-basis: calc(100% / 3 - var(--typical-mrg));
